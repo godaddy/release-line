@@ -94,8 +94,6 @@ describe('@wrhs/release-line', function () {
     assume(releaseline.version).equals(spec.version);
     assume(releaseline.previousVersion).equals(spec.previousVersion);
     await release.delete(spec);
-
-
   });
 
   it('should create and fetch the latest head releaseline without version', async function () {
